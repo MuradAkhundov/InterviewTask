@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TayqaTechTask" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/blue</item>
+    </style>
+
+    <style name="Theme.TayqaTechTask" parent="Base.Theme.TayqaTechTask" />
+
+    <style name="Widget.App.Toolbar.Surface" parent="Widget.Material3.Toolbar.Surface">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Toolbar.Surface</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Toolbar.Surface" parent="ThemeOverlay.Material3.Toolbar.Surface">
+        <item name="elevationOverlayEnabled">false</item>
+    </style>
+
+    <style name="MyCheckboxStyle">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorAccent">@color/blue</item>
+    </style>
+</resources>

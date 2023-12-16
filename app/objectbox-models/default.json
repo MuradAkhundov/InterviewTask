@@ -1,0 +1,101 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:2671866557346035859",
+      "lastPropertyId": "4:3424297206354517037",
+      "name": "LocalCity",
+      "properties": [
+        {
+          "id": "2:4615039571423849827",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:3211244946905740130",
+          "name": "countryId",
+          "indexId": "1:9144928042247538008",
+          "type": 11,
+          "flags": 520,
+          "relationTarget": "LocalCountry"
+        },
+        {
+          "id": "4:3424297206354517037",
+          "name": "cityId",
+          "type": 6,
+          "flags": 1
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:5821782580810427375",
+      "lastPropertyId": "2:5215083584823728923",
+      "name": "LocalCountry",
+      "properties": [
+        {
+          "id": "1:8115796665514759349",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:5215083584823728923",
+          "name": "name",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:8011975943881188946",
+      "lastPropertyId": "4:8010665979779143022",
+      "name": "LocalPerson",
+      "properties": [
+        {
+          "id": "1:6054821812040218341",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8724715620505067845",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:526806513395185004",
+          "name": "surname",
+          "type": 9
+        },
+        {
+          "id": "4:8010665979779143022",
+          "name": "cityId",
+          "indexId": "2:4573012169828083327",
+          "type": 11,
+          "flags": 520,
+          "relationTarget": "LocalCity"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "3:8011975943881188946",
+  "lastIndexId": "2:4573012169828083327",
+  "lastRelationId": "2:3982795610432931664",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    3797567443514927040
+  ],
+  "retiredRelationUids": [
+    6849946246175714677,
+    3982795610432931664
+  ],
+  "version": 1
+}
